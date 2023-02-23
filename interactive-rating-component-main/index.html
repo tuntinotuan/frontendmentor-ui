@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Interactive rating component | Frontend Mentor</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="rate">
+      <div class="rate__start"><img src="./images/icon-star.svg" alt=""></div>
+      <h1 class="rate__title">How did we do?</h1>
+      <p class="rate__text">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="rate__select">
+        <div class="rate__number">1</div>
+        <div class="rate__number">2</div>
+        <div class="rate__number">3</div>
+        <div class="rate__number">4</div>
+        <div class="rate__number">5</div>
+      </div>
+      <div class="rate__btn-submit">Submit</div>
+    </div>
+    <div class="result" style="display: none;">
+      <img src="./images/illustration-thank-you.svg" alt="" class="result__image">
+      <div class="result__selected">
+        <p> You selected <span> </span> out of 5</p>
+      </div>
+      <h1 class="result__title">Thank you!</h1>
+      <p class="result__content">We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!</p>
+    </div>
   </div>
+
+  <!-- Javascript -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>
