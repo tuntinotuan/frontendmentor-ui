@@ -16,24 +16,24 @@
 
 <body>
   <div class="container">
-    <div class="rate">
+    <div class="rate" id="rate">
       <div class="rate__start"><img src="./images/icon-star.svg" alt=""></div>
       <h1 class="rate__title">How did we do?</h1>
       <p class="rate__text">Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
       <div class="rate__select">
-        <div class="rate__number">1</div>
-        <div class="rate__number">2</div>
-        <div class="rate__number">3</div>
-        <div class="rate__number">4</div>
-        <div class="rate__number rate__number--active">5</div>
+        <div class="rate__number" onclick="chooseStart(this)">1</div>
+        <div class="rate__number" onclick="chooseStart(this)">2</div>
+        <div class="rate__number" onclick="chooseStart(this)">3</div>
+        <div class="rate__number" onclick="chooseStart(this)">4</div>
+        <div class="rate__number rate__number--active" onclick="chooseStart(this)">5</div>
       </div>
-      <div class="rate__btn-submit">Submit</div>
+      <div class="rate__btn-submit" id="submit" onclick="HandleSubmitBtn()">Submit</div>
     </div>
-    <div class="rate rate--result" style="display: none;">
+    <div class="result rate--result" id="result" style="display: none;">
       <img src="./images/illustration-thank-you.svg" alt="" class="result__image">
       <div class="result__selected">
-        <p> You selected <span> </span> out of 5</p>
+        <p> You selected <span id="start-chose"> </span> out of 5</p>
       </div>
       <h1 class="result__title">Thank you!</h1>
       <p class="result__content">We appreciate you taking the time to give a rating. If you ever need more support,

@@ -154,7 +154,8 @@ button {
   justify-content: center;
   align-items: center;
 }
-.rate {
+.rate,
+.result {
   width: 415px;
   height: 415px;
   border-radius: 20px;
@@ -171,12 +172,12 @@ button {
   align-items: center;
   background-color: #303e4b;
   border-radius: 100rem;
-  margin-bottom: 35px;
 }
 .rate__title {
   font-size: 24px;
   font-weight: 700;
   color: var(--white);
+  margin-top: 35px;
   margin-bottom: 20px;
 }
 .rate__text {
@@ -231,12 +232,29 @@ button {
 }
 /* Result */
 .result {
+  align-items: center;
+  justify-content: center;
 }
 .result__image {
+  width: 180px;
+  height: 120px;
 }
 .result__selected {
+  width: auto;
+  height: auto;
+  color: var(--primary-color-orange);
+  background-color: #303e4b;
+  margin: 30px 0;
+  padding: 10px 20px;
+  border-radius: 100rem;
 }
 .result__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--white);
 }
 .result__content {
+  color: var(--light-grey);
+  line-height: 25px;
+  text-align: center;
 }
